@@ -1,0 +1,14 @@
+﻿Patch reconstructs exact pt-BR SHA256
+Patch reconstructs exact en-US SHA256
+Patch reconstructs exact ru-RU SHA256
+Install, verify, repeat pt-BR
+Install, verify, repeat en-US
+Install, verify, repeat ru-RU
+Original backup and untouched signature verified
+Unknown game build rejected without mutation
+Concurrent installer lock enforced
+Corrupt backup rejected without mutation
+Corrupt patch rejected before replacing game data
+Recover clean original from v0.4, switch to EN and restore RU
+Upgrade directly from previous English without restoring RU first
+PASS: 13 integration checks. Fake installation only; no live game altered.

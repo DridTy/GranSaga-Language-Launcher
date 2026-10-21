@@ -1,0 +1,180 @@
+10_1|Foolish mortal!
+10_2|You are all alone.
+10_3|You are merely human.
+10_4|Do not even dream of defeating me!
+10_5|This is no dream!
+10_7|Rudra, let's go!
+10_8|I am ready, Leon!
+10_8_1|Begone!
+10_9|Relying on the power of a pathetic Gran Weapon?
+10_10|Apollo, now!
+10_11|It is time to unleash your power, Leon.
+10_11_1|Forward!
+10_12|Is that all? Try harder!
+10_13|Baldr!
+10_14|It seems my help is needed!
+10_15|Prepare yourself!
+10_16|Not bad. For a human.
+10_17|Leon!
+10_18|Still nothing but a servant,
+10_19|rebelling against his master.
+10_20|Such insolence!
+10_21|You are pathetic
+10_22|and foolish.
+10_23|Your death
+10_24|will mark the beginning of this world's end!
+10_25|Your bloody reign ends here, Black Dragon!
+10_26|Let us see
+10_27|if you can manage that!
+10_28|Help me.
+10_29|I am always at your service.
+10_29_1|Forward!
+10_30|The time of reckoning has come!
+10_31|Black Dragon Ismael!
+10_32|My goddess...
+10_33|Pathetic humans!
+10_34|By the power of light!
+MAQ000_130_1|Captain, thank you for your help.[n]We will head to Lagnadea now.
+MAQ000_130_2|No need to thank me. Sir Kaleh asked me to help.[n]Has the girl regained consciousness?
+MAQ000_130_3|Yes. We are taking her with us.[n]What is going on here? Why all the commotion?
+MAQ000_130_4|Mumu have invaded our territory. I have already sent soldiers to deal with them. The situation should be resolved soon.
+MAQ000_130_5|What? Mumu invaded royal territory?..[n]I wonder what happened. They are usually so peaceful.
+MAQ000_130_6|It really is strange.[n]I have ordered the soldiers to investigate once they have dealt with the mumu.
+MAQ000_130_7|We would like to help.[n]We may not be Gran Knights yet, but we know a thing or two.
+MAQ000_130_8|Thank you very much![n]Sir Kaleh can be proud of you.
+MAQ000_140_1|Seriade, it is dangerous here. Stay back.
+MAQ000_140_2|But... I want to help too.
+MAQ000_150_1|Thank you for your help, knights! You really saved us.
+MAQ000_150_2|What happened?
+MAQ000_150_3|The mumu caught us off guard! But we are holding out for now.
+MAQ000_150_4|Did you find out why they attacked?
+MAQ000_150_5|The captain ordered us to search the area, but we found nothing. Then levi joined the mumu...
+MAQ000_150_6|The mumu and levi are having a picnic! I want to join them!
+MAQ000_150_7|Go ahead and ask. I am sure they would be delighted.
+MAQ000_150_8|I would like to thank you. Here, take these potions. They will help in battle.
+MAQ000_150_9|You really did not have to.[n]Thank you.
+MAQ000_160_1|Over there! A wounded soldier!
+MAQ000_160_2|We should give him a potion.
+MAQ000_170_1|Hey, wake up!
+MAQ000_180_1|Oh... Thank you. You saved my life.
+MAQ000_180_2|Did the mumu beat you up like this?
+MAQ000_180_3|No! I could handle ordinary mumu. Look over there.
+MAQ000_180_4|That huge Mumu King attacked me! Just what we needed... Are they trying to conquer these lands?
+MAQ000_180_5|Hmm... A Mumu King, you say? It really is huge. Imagine how many people we could feed with it...
+MAQ000_180_6|Do not even start. Nobody wants to eat mumu.
+MAQ000_180_7|We never had many soldiers here. When the monsters attacked, we could not hold them back...
+MAQ000_180_8|Do not worry. We will deal with the Mumu King.
+MAQ000_180_9|Really? Thank you so much![n]Good luck!
+MAQ000_190_1|Winn, if our dinner is blue, I will personally...
+MAQ000_190_2|Do not worry. I will get a red mumu for you.
+MAQ000_190_3|The color is not the problem!
+MAQ000_250_1|Is Seriade a member of our order now?
+MAQ000_250_2|First we need to tell the prime minister everything.
+MAQ000_RE10_6|Huh?..
+MAQ000_RE10_7|Aaaah!
+MAQ000_RE10_9|Aah!
+MAQ000_RE10_12|Phew!
+MAQ000_RE10_13|Ah!..
+MAQ000_RE10_15|Ugh!
+MAQ000_RE10_16|A-argh...
+MAQ000_RE30_1|She moved!
+MAQ000_RE30_2|She is waking up.
+MAQ000_RE30_3|You are finally awake!
+MAQ000_RE30_4|Where am I?..
+MAQ000_RE30_5|How are you feeling? You were unconscious.
+MAQ000_RE30_6|Where... am I?
+MAQ000_RE30_7|This is a royal army outpost!
+MAQ000_RE30_8|And you are...
+MAQ000_RE30_9|We are a knightly order from Lagnadea! We are called...
+MAQ000_RE40_1|We want to become the best of the best! Gran Knights!
+MAQ000_RE40_2|Here we go again.
+MAQ000_RE40_3|My name is Seriade...
+MAQ000_RE40_4|That is all I remember... Just my name...
+MAQ000_RE40_5|That is hard to believe.
+MAQ000_RE40_6|Nothing at all?
+MAQ000_RE40_7|Very suspicious.
+MAQ000_RE40_8|Stop it. She has clearly been through a lot. Do not pressure her.
+MAQ000_RE40_9|Get in my way,
+MAQ000_RE40_10|and I will get rid of you.
+MAQ000_RE40_11|All I know
+MAQ000_RE40_12|is this brooch in my hand...
+MAQ000_RE40_13|A brooch?
+MAQ000_RE40_14|It looks rather expensive.
+MAQ000_RE40_15|What is it? What is it?
+MAQ000_RE40_16|Rumi protects me.
+MAQ000_RE40_17|Hello! Nice to meet you!
+MAQ000_RE40_18|My name is Rumi!
+MAQ000_RE40_19|It cannot be... A Grand Soul?
+MAQ000_RE40_20|I wish I could explain everything,
+MAQ000_RE40_21|but I do not remember anything either.
+MAQ000_RE40_22|This brooch is a Gran Weapon? I have never seen one in that shape.
+MAQ000_RE40_23|We can look into that.
+MAQ000_RE40_24|Perhaps Eva, the keeper of the Sacred Tree, knows something?
+MAQ000_RE40_25|Let us return to Lagnadea!
+MAQ000_RE50_1|Eva, long time no see!
+MAQ000_RE50_2|Welcome, dear knights.
+MAQ000_RE50_3|I heard you rescued a girl in the Moonstone Cave.
+MAQ000_RE50_4|Good deeds deserve a reward.
+MAQ000_RE50_5|I grant you the goddess's blessing!
+MAQ000_RE50_6|Wow!
+MAQ000_RE50_7|I have never seen so many Gran Weapons!
+MAQ000_RE50_8|Oh, right, Eva!
+MAQ000_RE50_9|About Seriade...
+MAQ000_RE50_10|I have never seen a Gran Weapon shaped like a brooch.
+MAQ000_RE50_11|But its shape is not what matters most!
+MAQ000_RE50_12|I am more concerned about Seriade's amnesia.
+MAQ000_RE50_13|Why not ask Elisa for help?
+MAQ000_RE50_14|Right! Elisa handles the kingdom's citizen records!
+MAQ000_RE50_15|Thank you, Eva!
+MAQ000_30_1|We cannot run from the battlefield!
+MAQ000_40_1|You! Tell me who you are, right now!
+MAQ000_50_1|Is that... water energy?! Winn!
+MAQ000_70_1|I call upon the power of earth!
+MAQ000_80_1|Argh, my legs will not move!
+MAQ000_100_1|Can you stop the wind with the power of earth?
+MAQ000_270_1|But they have changed so much!
+MAQ000_270_2|The brooch is glowing strangely!
+MAQ000_270_3|We will sort this out!
+MAQ000_280_1|Do not overdo it, brats!
+MAQ000_300_1|Stop right there!
+MAQ000_300_2|After him!
+MAQ000_300_3|Get the brooch back, no matter what!
+MAQ000_1000_1|I will handle this!
+MAQ000_1010_1|Stay calm! I am coming!
+MAQ000_1020_1|It is dangerous here. Stay back!
+MAQ000_1100_1|Oh... I need more power!
+MAQ000_1110_1|If this keeps up, everyone will be in danger!..
+MAQ000_1120_1|Normal attacks are useless!
+MAQ000_1200_1|Ingrid, help me!
+MAQ000_1210_1|Ingrid! I need power!
+MAQ000_1220_1|Your time has come!
+MAQ000_1300_1|Ingrid, let's go!
+MAQ000_1310_1|I will burn you all!
+MAQ000_1320_1|Take this!
+MAQ000_1400_1|The transformation is almost over! Just a little longer!..
+MAQ000_1410_1|I... cannot... go on...
+MAQ000_1420_1|Oh! I must defeat them before the transformation ends!
+5_1|This is the story of Esprogen, the primordial land.
+5_2|It begins with the goddess Bertis, who cared for all life in this world.
+5_3|And with a wicked dragon...
+5_4|The Black Dragon Ismael longed to rule the entire world.
+5_5|He lured the goddess into his lair.
+5_6|Humans tried to rescue the goddess,
+5_7|but faced the dragon's furious wrath.
+5_8|They did not give in to fear and continued their advance.
+5_9|Ismael realized that he was about to be defeated.
+5_10|The Black Dragon entered their minds and found their weakness.
+5_11|It was greed, sleeping deep within their souls.
+5_12|The dragon fanned the flames of avarice in their hearts.
+5_13|Humans turned their swords on one another and forgot the goddess.
+5_14|Ismael conquered all of Esprogen, for the goddess could no longer protect the continent.
+5_15|But one day, in the lands beneath the Black Dragon's shadow,
+5_16|a young man appeared who remained faithful to the goddess.
+5_17|He swore to fight the Black Dragon.
+5_18|The captive goddess heard his vow and gathered the last of her strength
+5_19|to grant him a Gran Weapon of extraordinary power.
+5_20|The young man reminded the people of the goddess.
+5_21|Those who remembered her mercy turned against the Black Dragon once more.
+5_22|At last, the decisive battle began. The young warrior and his companions were ready to fight to the death,
+5_23|to destroy the Black Dragon.
+12_33|But I do not remember anything either.

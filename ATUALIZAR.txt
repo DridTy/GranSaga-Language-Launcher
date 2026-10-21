@@ -1,0 +1,12 @@
+ATUALIZAR DO INSTALADOR ANTERIOR
+
+1. Feche o jogo e o instalador antigo.
+2. Extraia este ZIP inteiro em uma nova pasta.
+3. Execute GranSagaLanguages.exe dessa nova pasta.
+4. Selecione a pasta do jogo e English progression v0.2.
+5. Clique em Aplicar / Apply e abra o jogo pelo 4game.
+
+Não é necessário restaurar russo antes: o instalador reconhece a versão
+inglesa anterior e o PT-BR v0.4. Ele usa o backup original já existente.
+Mantenha o executável, manifest.json e patches/ da mesma distribuição.
+Ainda haverá russo nos trechos não traduzidos, tutoriais e outras tabelas.

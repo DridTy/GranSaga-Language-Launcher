@@ -1,0 +1,140 @@
+0|Wait! Something is not right here.
+1|What is it?
+2|Why is that little one perfectly fine?
+3|Little one? Do you mean Quyi? Quyi is always fine!
+4|Not you![n]The flying little one!
+5|Her Gran Weapon was stolen, yet she is flying around with us? How is that possible? A Gran Weapon and its Grand Soul are one and the same!
+6|You are right... I had not even thought of that!
+7|Who are you two, really?..
+8|Oh! Quyi has an idea! Maybe Rumi is the queen of Grand Souls! That is why she does not need to stay near her Gran Weapon!
+9|Hmm... Maybe!
+10|Are you two serious?
+11|I am sorry... I really wish I could answer your questions, but...[n]I cannot remember anything...
+12|That brooch is the only thing I had left after losing my memory. I feel that I should never have lost it.
+13|We need to find Karcion and recover the brooch. That is the only way to find answers.
+14|Hmm, what if it is not a brooch at all?[n]Why do you think Karcion wants it?
+15|We will learn nothing by standing around.[n]Right now, getting the brooch back is what matters most.
+16|Besides, those are the prime minister's orders.
+17|Yes, Lass is right. But these lands belong to the Church. I doubt we will be welcome.
+18|We have to try.
+19|I... I should go alone. I do not want you to get hurt because of me.
+20|Seriade, it is all right. We are knights, and knights help those in trouble. Do not worry.
+21|Besides, finding the brooch will be much harder without Rumi. We need your help.
+22|Decide for yourself whether to come with us. Just stay out of the way.
+23|Ah... Yes! I will try not to get in your way...
+24|So we are all going together? Let's go!
+25|Hey! Stop! You look like warriors of the kingdom. This land belongs to the Church! How many times must I repeat myself?
+26|Repeat yourself? This is our first time here.
+27|Do not play dumb![n]Think I do not know you are with that Gran Knight?
+28|No, you have misunderstood. We are pursuing that Gran Knight. Please tell us where he is.
+29|What? Pursuing him? Ha ha! So things are not so smooth in the royal army! What happened to comradeship and helping each other?
+30|How dare you...
+31|We cannot explain all the details, but we need to catch him. Please help us find him.
+32|You need the master's permission to operate in Church territory. But I doubt he will give it.
+33|Where can we find the master?
+34|I will say no more. Go to the base if you want information. But bring crobo leather.
+35|No one will talk to you if you arrive empty-handed. Ha ha ha!
+36|And that is a Church soldier who serves the goddess...
+37|I hope they are not all like that.
+38|Attack!
+39|Warriors of the kingdom! What are you doing here?
+40|We would like to meet the master.
+41|Hmm, if you are here, Farco let you through. You did not come empty-handed, did you?
+42|Here is some crobo leather. This should be enough.
+43|Let me see... Are you joking? What did that fool Farco tell you?
+44|Do not tell me it is not enough. You serve the goddess! How can you even...
+45|Of course we are faithful to the goddess. But we cannot devote ourselves to spiritual service until our, ahem, basic needs are met. And that takes money.
+46|Money? What are you talking about?
+47|Must I spell it out? True faith requires wealth![n]Oh! Master!
+48|Crobo leather... A bribe? So that is why you serve the Church so zealously...
+49|Uh...
+50|Master, we have a request. We are pursuing a fugitive hiding in these lands and need permission to search for him.
+51|Hmm... Are you looking for a Gran Knight?
+52|Yes, but how did you know?
+53|He was just here. We tried to stop him, but he escaped after insulting us. Why are warriors of the kingdom pursuing a Gran Knight?
+54|I am afraid we cannot tell you.
+55|Hmm... I see. Then I cannot authorize your search. This is Church territory. Royal warriors have no place here.
+56|Master! Over there, a group of figors! They are approaching!
+57|What terrible timing... Let us continue this conversation once we have dealt with them.
+58|Thank you for your help. But it changes nothing.
+59|I cannot allow you to move around the Temporary Harbor until you explain your interest in this Gran Knight.
+60|Um... That information is confidential. I cannot disclose it.
+61|Then I must ask you to leave the Temporary Harbor.
+62|What? We helped you, and now you...
+63|I appreciate your help. Do not worry, you will receive your reward.
+64|Perhaps you should reward them now.
+65|Captain Fiona?!
+66|In the queen's name, I request permission to search for the fugitive. This is a personal assignment from the prime minister. I trust you will not obstruct us.
+67|Allow me to remind you that the Church and the kingdom agreed to respect each other's territories.
+68|So I am afraid the prime minister's words do not change the situation.
+69|Is that so? Then we must turn to the commandments of the goddess Bertis.
+70|What do you mean?
+71|The first commandment: follow the logic of strength. The second: never retreat before hardship. Allow me to remind you what that means.
+72|Under the first, you must grant permission if we defeat you in combat. Under the second, we cannot give up and leave, even if you forbid the search...
+73|Enough. I see you know Bertis's commandments well.[n]Very well, you have persuaded me. I will authorize the search.
+74|Wait here. I will prepare everything.
+75|Thank you so much for helping us.[n]But how did you get here?
+76|I was reporting the mumu's strange behavior in Lagnadea when the captain of the royal guard sent me to assist you.
+77|I could not find you until someone said you had entered Church territory. I knew you would need help and hurried here.
+78|How do you know the goddess's commandments? You quoted them so confidently...
+79|It is always useful to know how your opponent thinks. You should learn more about the Church too.
+80|Thank you for the advice!
+81|I still cannot believe a Gran Knight turned out to be such a scoundrel. I always thought of them as heroes...
+82|It is hard for us to believe too.[n]But we saw everything with our own eyes.
+83|And the prime minister? Is he all right?
+84|Yes, his life is no longer in danger. It seems he could not block the blow because of an old war wound.
+85|I am glad he is all right.[n]I was very worried about him.
+86|Yes. That is why the captain of the royal guard asked me to deliver a message.
+87|He asks you not to worry about the capital and to focus on finding Karcion. And... he told you to be careful.
+88|Careful? What does that mean?
+89|Karcion was a Gran Knight. You are still learning. Do you think you can handle him?
+90|Well...
+91|There is only one way to find out. We are not as weak as you think.
+92|I do not doubt your abilities. But Karcion is extremely powerful. Believe me, it is better not to take risks.
+93|Understood. But I doubt we can avoid a fight.
+94|Now I want to fight him even more...
+95|I apologize for the wait.
+96|I left your permit on the table. With it, you may move freely through Church territory.
+97|I also wrote a letter to Ria. You will meet her at the next base. Please deliver my message.
+98|One last thing. Take mandrake leaves when you go to see Ria.
+99|They will be useful to her.
+100|Well, now he is giving us errands too.
+101|Apparently the goddess's commandments say nothing about helping for free...
+102|Quyi does not do anything for free either!
+103|I can feel the brooch's energy! It is over there!
+104|Hmm... I did not know Grand Souls could exist away from their Gran Weapons.
+105|I still have much to learn.
+106|Not at all, Captain! You are already smarter than all of us!
+107|Stop. Outsiders are not allowed here.
+108|We have Master Bale's permission. And here are some mandrake leaves.
+109|Master Bale's permission?.. Let me see.
+110|He also asked us to give you this letter.
+111|A letter?
+112|Hmm...
+113|Very well. If the master himself authorized it, I will not hold you up. Do you need anything else?
+114|We are looking for Karcion! Do you know where he is?
+115|Karcion? Never heard of him.[n]If you mean the long-haired man who passed through earlier, he went toward Figor Forest.
+116|Yes, yes! That is who we are looking for! Did he say anything?
+117|No... I remember him because strangers rarely come here.[n]And he went into Figor Forest. That is either very brave or very foolish.
+118|Are you going there too?
+119|Yes. We must find him as soon as possible.
+120|Hmm... Will you tell me about it afterward?[n]I need to know everything that happens in Church territory.
+121|Yes, of course.
+122|Thank you. There are many figors around, so be careful. May the goddess's blessing be with you!
+123|She is too friendly. Suspicious.
+124|Maybe not all Church soldiers are bad!
+125|Stay alert. She might be planning something.
+126|I think we should split up and search.[n]Ria said Karcion went to Figor Forest, but we should check other places too.
+127|Go to the forest. Leave the rest to me.
+128|Will you be all right alone?
+129|I will be fine. Do not worry.[n]We will meet here when we are finished. Understood?
+130|All right.
+131|Rumi, can you feel anything?
+132|Yes! We are close!
+133|The brooch should be somewhere around here!
+134|Where did he go?
+135|Hey, little one, where is he?
+136|The brooch's energy... It is getting weaker...
+137|Of course it is: he is leaving! But where? Come on, we need to catch him!
+138|I am trying. But he is moving away so fast that I cannot keep track...
+139|Oh... I think I lost him...
