@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "originalSha256": "453911f81088bc507b90dfcd493f1c4a3849796dc183602be23709764f63a3c8",
   "prefixSha256": "ca2b8d248c42b45b43a70f97cd262974efaa5a29fa731c717c2eabb9b6a355a9",
   "supportedHashes": [
@@ -9,28 +9,30 @@
     "5d66e54373ce01a117546a3e8d89a4b897cf1159aa479f1862691dd89cd4860d",
     "884410b204a7665de03f70bc59078a2194bfb0dc7838d3e1d574372e8f0c36ac",
     "fb155156daa9ea71dfbdab3f93ebd205aa536782ba2eb2dfc4a38bb9a96f14d5",
-    "86d691bf243448caaec3e354e71f18bfde1027ccbba68c8e78e6ac7b2fdbcb56"
+    "86d691bf243448caaec3e354e71f18bfde1027ccbba68c8e78e6ac7b2fdbcb56",
+    "8787f081a6dbaeed2a56ea004c90b62d5bf92f146479ce6681b72f3ddc4a9179",
+    "d7d1dd13ecf38810437eeb41a2a16896e3f41441650d1ef83ed718c35ef404f5"
   ],
   "languages": [
     {
       "id": "pt-BR",
-      "label": "Português brasileiro · v0.4",
+      "label": "Português BR · menus expandidos",
       "file": "pt-BR.gsp.gz",
-      "sha256": "67835e375d9672004b313863beeb8cd85547b1d1e47a9dfbd47f115dbb4efd52",
-      "targetSha256": "9728b9dbb9c2621596f28ac4b3253a49662c5d859143b3e3ce65c6f64acf6e75",
+      "sha256": "7da522e5dc601b33b60e1732492f5b1168109204d82a884be1cd02f833df385e",
+      "targetSha256": "8787f081a6dbaeed2a56ea004c90b62d5bf92f146479ce6681b72f3ddc4a9179",
       "prefixLength": 69081909,
-      "targetLength": 106130319,
-      "description": "PT-BR parcial: menus v0.2 + 5.467 registros de falas. Prólogo e MAQ001 cobertos; MAQ002 parcial. Método confirmado no jogo; ampliação v0.4 ainda em revisão."
+      "targetLength": 106769459,
+      "description": "Menus: 3.635 registros traduzidos no recurso principal; 979 são rascunhos automáticos. História PT-BR v0.4 preservada. Outros menus internos ainda podem estar em russo."
     },
     {
       "id": "en-US",
-      "label": "English · progression v0.2",
+      "label": "English · expanded menus",
       "file": "en-US.gsp.gz",
-      "sha256": "529d6659db450d7add09d5d7758de27e46396f13ebf343c478709dc255617397",
-      "targetSha256": "86d691bf243448caaec3e354e71f18bfde1027ccbba68c8e78e6ac7b2fdbcb56",
+      "sha256": "1a7f083e698b13d15034eca4e41a866158691264e06917a7299735c0a1ff0fac",
+      "targetSha256": "d7d1dd13ecf38810437eeb41a2a16896e3f41441650d1ef83ed718c35ef404f5",
       "prefixLength": 69081909,
-      "targetLength": 106328679,
-      "description": "English v0.2 / parcial: 258 UI texts, 1,984 dialogue records. Opening and prologue covered; first 140 MAQ001 records translated. Repeated short lines also translated elsewhere. Expanded version awaiting in-game review."
+      "targetLength": 106895362,
+      "description": "Menus: 3,615 translated records in the main UI resource; 3,036 are machine drafts. English story v0.2 preserved. Other internal menus may still be Russian."
     },
     {
       "id": "ru-RU",
@@ -42,5 +44,6 @@
       "targetLength": 69165970,
       "description": "Restaura exatamente o pacote russo original desta versão. / Restores the exact original Russian package for this supported build."
     }
-  ]
+  ],
+  "originalSignatureSha256": "9114a7e3e2752fecd51450b8fa9772151495b71378ffdbe04a5b2074b3632069"
 }

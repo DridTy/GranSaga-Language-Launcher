@@ -1,0 +1,258 @@
+/ Стихи -|/ Element -|/ Elemento -
+Гран-рыцарь|Gran Knight|Cavaleiro Gran
+Специализация таланта|Talent specialization|Especialização de talento
+[Тал.]|[Talent]|[Talento]
+Сброс выполнен.|Reset complete.|Redefinição concluída.
+появится разлом|a rift will appear|um portal aparecerá
+Сброс в ## ч.|Resets in ## h.|Reinicia em ## h.
++{0} оч.|+{0} pts.|+{0} pts.
+оч.|pts.|pts.
+- ур.|- Lv.|- Nv.
+- Конец -|- End -|- Fim -
+- Условия разблокирования -|- Unlock requirements -|- Requisitos de desbloqueio -
+(Оружие > Артефакт)|(Weapon > Artifact)|(Arma > Artefato)
+(Шанс применения:|(Activation chance:|(Chance de ativação:
+(Шанс применения касания:|(Touch activation chance:|(Chance de ativação por toque:
+Призвать 10 раз|Summon 10 times|Invocar 10 vezes
+Призвать 5 раз|Summon 5 times|Invocar 5 vezes
+Призвать 1 раз|Summon once|Invocar uma vez
+Результат призыва 5 р.|5-summon results|Resultado de 5 invocações
+Осталось 12 ч.|12 h. remaining|Restam 12 h.
+Осталось 99 ч.|99 h. remaining|Restam 99 h.
+До 04:00 2 декабря|Until December 2, 04:00|Até 2 de dezembro, 04:00
+Для пользователей младше 18|For users under 18|Para menores de 18 anos
+18 и старше/без ограничений|18 and over / unrestricted|18 anos ou mais / sem restrições
+Применяется ур. 2|Lv. 2 applied|Nv. 2 aplicado
+Эффекты ур. 2|Lv. 2 effects|Efeitos de Nv. 2
+В сети 21 ч. назад|Online 21 h. ago|Online há 21 h.
+Прохождение за 2 мин.|Clear in 2 min.|Concluir em 2 min.
+Пройти главу 2|Clear chapter 2|Concluir o capítulo 2
+Выберите 3 персонажей.|Choose 3 characters.|Escolha 3 personagens.
+Выберите 3 любых персонажей.|Choose any 3 characters.|Escolha 3 personagens.
+Состав персонажей можно изменять.|You can change your team later.|Você pode alterar a equipe depois.
+<Поселение>|<Settlement>|<Povoado>
+<Поле>|<Field>|<Campo>
+Все|All|Todos
+Выбор региона CDN|CDN region|Região de CDN
+Пройдено!|Cleared!|Concluído!
+Испытание|Challenge|Desafio
+Испытание босса|Boss challenge|Desafio de chefe
+Режим испытания|Challenge mode|Modo de desafio
+Пройдено|Cleared|Concluído
+Подсчет|Count|Contagem
+Озв.|Voice|Voz
+Путь DLC|DLC path|Caminho do DLC
+И\nВ\nЕ\nН\nТ|E\nV\nE\nN\nT|E\nV\nE\nN\nT\nO
+Легко|Easy|Fácil
+Ивент|Event|Evento
+Опыт+|EXP+|EXP+
+Пусто|Empty|Vazio
+Ивентовый призыв|Event summon|Invocação de evento
+Бесплатно|Free|Grátis
+Неудача|Failed|Falha
+Первое прохождение|First clear|Primeira conclusão
+Доступен призыв ГО|Gran Weapon summon available|Invocação de Arma Gran disponível
+Использование зелий HP|Use HP potions|Usar poções de HP
+Шкала HP|HP bar|Barra de HP
+Большой счет|High score|Pontuação alta
+Хит|Hit|Acerto
+Горячая пора|Hot time|Período de bônus
+Цель|Target|Alvo
+УРОВЕНЬ|LEVEL|NÍVEL
+НОВЫЙ УРОВЕНЬ|LEVEL UP|SUBIU DE NÍVEL
+Повышение уровня|Level up|Subir de nível
+Прорыв предела|Limit break|Quebra de limite
+Ограничено|Limited|Limitado
+Ур.|Lv.|Nv.
+Ур. {0}|Lv. {0}|Nv. {0}
+Ур. ##|Lv. ##|Nv. ##
+Макс. ур.|Max Lv.|Nv. máximo
+Ур. {Level}|Lv. {Level}|Nv. {Level}
+Ур. {level}|Lv. {level}|Nv. {level}
+МАКС. УР.|MAX LEVEL|NÍVEL MÁXIMO
+Использование зелий MP|Use MP potions|Usar poções de MP
+Увелич. регенерации MP|Increased MP regeneration|Aumento da regeneração de MP
+Промах|Miss|Errou
+Мой рейтинг|My ranking|Minha classificação
+Новинка|New|Novo
+Выберите эффект для ряда N.|Select an effect for row N.|Selecione um efeito para a linha N.
+Игрок|Player|Jogador
+Свойство_{0}|Property_{0}|Propriedade_{0}
+Рейтинг|Ranking|Classificação
+Ранг|Rank|Grau
+Повышение ранга|Rank up|Subir de grau
+Приготовиться|Ready|Preparar
+РАСПРОДАНО|SOLD OUT|ESGOTADO
+ЛИЧНЫЙ|PERSONAL|PESSOAL
+ОСОБЫЕ|SPECIAL|ESPECIAIS
+Сброс призмы SR|SR prism reset|Redefinir prisma SR
+Награда шкалы SSR|SSR gauge reward|Recompensa da barra SSR
+Сброс призмы SSR|SSR prism reset|Redefinir prisma SSR
+Ранг SSR гарантирован!|SSR rank guaranteed!|Grau SSR garantido!
+НАЧАЛО|START|INÍCIO
+Повышение уровня умения|Skill level up|Subir nível da habilidade
+Отправить лог в Slack|Send log to Slack|Enviar registro ao Slack
+Ячейка.|Slot.|Espaço.
+Особ.|Special|Especial
+Привязать к аккаунту Steam?|Link to Steam account?|Vincular à conta Steam?
+Название|Name|Nome
+Нажмите|Tap|Toque
+Ранг UC|UC rank|Grau UC
+Показывать весь|Show all|Mostrar tudo
+Значение|Value|Valor
+Муз. тема|Theme music|Música tema
+Выбрано X шт.|X selected|X selecionados
+[##Осн.]|[##Main]|[##Principal]
+[Осн.]|[Main]|[Principal]
+[Побоч.]|[Side]|[Secundária]
+[Трен.]|[Training]|[Treino]
+[Кор.]|[Royal]|[Real]
+[Ежед.]|[Daily]|[Diária]
+[Еженед.]|[Weekly]|[Semanal]
+[звезды: 3]|[Stars: 3]|[Estrelas: 3]
+[звезды: 4]|[Stars: 4]|[Estrelas: 4]
+[звезды: 5]|[Stars: 5]|[Estrelas: 5]
+Награда х{0}|Reward x{0}|Recompensa x{0}
+Автозапуск через {0} с.|Auto-start in {0} s.|Início automático em {0} s.
+До завершения: {0} с.|Time remaining: {0} s.|Tempo restante: {0} s.
+Пассивное умение отряда {0}|Team passive skill {0}|Habilidade passiva da equipe {0}
+Продлить на {AddTime} д.|Extend by {AddTime} d.|Estender por {AddTime} d.
+{seconds} с.|{seconds} s.|{seconds} s.
+Хранители|Guardians|Guardiões
+Выбор хранителя|Select guardian|Selecionar guardião
+Список хранителей на выбор|Available guardians|Guardiões disponíveis
+Усиление хранителей|Enhance guardians|Aprimorar guardiões
+Умение хранителя|Guardian skill|Habilidade do guardião
+Талант хранителя|Guardian talent|Talento do guardião
+Сброс таланта хранителя|Reset guardian talent|Redefinir talento do guardião
+Назначение хранителей|Assign guardians|Designar guardiões
+Экипируйте\nхранителя.|Equip a\nguardian.|Equipe um\nguardião.
+Выберите хранителя.|Select a guardian.|Selecione um guardião.
+Хранитель \nзаблокирован|Guardian \nlocked|Guardião \nbloqueado
+Ячейки сумки|Bag slots|Espaços da bolsa
+Расширение сумки|Expand bag|Expandir bolsa
+Тип вирт. панели|Virtual pad type|Tipo de controle virtual
+Справка|Help|Ajuda
+Вступить|Join|Entrar
+Ранг игроков|Player rankings|Classificação de jogadores
+Нельзя вступить|Cannot join|Não é possível entrar
+Заявки на вступление|Join requests|Pedidos de entrada
+Тип входа|Entry type|Tipo de entrada
+Условия вступления|Join requirements|Requisitos de entrada
+Отмена вступления|Cancel join request|Cancelar pedido de entrada
+Кожа|Leather|Couro
+Не хватает очков вторжения.|Not enough invasion points.|Pontos de invasão insuficientes.
+Подбор для вторжения|Invasion matchmaking|Buscar invasão
+Усиление|Enhancement|Aprimoramento
+Усиленная стихия|Boosted element|Elemento fortalecido
+Усиление завершено|Enhancement complete|Aprimoramento concluído
+Условие улучшения|Upgrade requirement|Requisito de melhoria
+Исключить усиленные|Exclude enhanced items|Excluir itens aprimorados
+шт.|pcs.|un.
+Открыть|Open|Abrir
+Условия для открытия|Unlock requirements|Requisitos para desbloquear
+Выбирать по 1 шт.|Select 1 at a time|Selecionar 1 por vez
+Личный вызов|Personal challenge|Desafio pessoal
+Одиночная битва|Solo battle|Batalha solo
+Одиночная тренировка|Solo training|Treino solo
+Всего личных очков|Total personal points|Total de pontos pessoais
+Обнов.|Refresh|Atualizar
+Нет обнов.|No refreshes|Sem atualizações
+Идет обновление|Updating|Atualizando
+Отказаться|Decline|Recusar
+Воскрешение на посту|Revive at outpost|Reviver no posto
+Переместиться на пост|Move to outpost|Ir ao posto
+Гостевой вход|Guest login|Entrar como visitante
+Проверка результата|Check results|Verificar resultado
+Связь создана|Link established|Vínculo criado
+Сумма платежей|Total payments|Total de pagamentos
+Выбор способа оплаты|Select payment method|Selecionar forma de pagamento
+Способы оплаты|Payment methods|Formas de pagamento
+Лимит платежей|Payment limit|Limite de pagamentos
+Арена|Arena|Arena
+Не хватает очков арены.|Not enough arena points.|Pontos de arena insuficientes.
+Призовая капсула|Prize capsule|Cápsula de prêmio
+Выберите талисман.|Select a talisman.|Selecione um talismã.
+Закреп\nлено|Lock\ned|Bloque\nado
+Получаемое золото|Gold earned|Ouro recebido
+Поменять группу на открытую|Make group public|Tornar grupo público
+История атак|Attack history|Histórico de ataques
+Полученные удары|Hits taken|Golpes recebidos
+Заявка на нападение|Attack request|Pedido de ataque
+Атакующие параметры|Offensive stats|Atributos ofensivos
+Подсказка по прохождению|Clear hint|Dica de conclusão
+О прохождении|Clear information|Informações de conclusão
+Мастерская - гран-оружие|Workshop - Gran Weapons|Oficina - Armas Gran
+Общая награда|Total rewards|Recompensa total
+Наблюдать|Spectate|Assistir
+Меню наблюдения|Spectator menu|Menu de espectador
+Пробивание|Penetration|Penetração
+Рекламное вознаграждение|Ad reward|Recompensa de anúncio
+Цель замены|Replacement target|Alvo de substituição
+Цель для замены|Replacement target|Alvo de substituição
+Обновить список|Refresh list|Atualizar lista
+Нет снаряжения для обмена!|No equipment to exchange!|Não há equipamento para trocar!
+Кол-во обменов|Exchanges|Quantidade de trocas
+Можно купить|Available for purchase|Disponível para compra
+Можно купить 1/1|Purchasable 1/1|Compras disponíveis 1/1
+Кол-во|Quantity|Quantidade
+Всего попыток|Total attempts|Total de tentativas
+Купить нельзя|Cannot purchase|Compra indisponível
+Шкала абсолютного умения|Ultimate skill gauge|Barra da habilidade suprema
+Абсолютное умение|Ultimate skill|Habilidade suprema
+Рек. мощь|Recommended power|Poder recomendado
+Рек. перс.|Recommended character|Personagem recomendado
+Нехватка боевой мощи|Not enough combat power|Poder de combate insuficiente
+Гран-оружие|Gran Weapon|Arma Gran
+Смотреть гран-оружие|View Gran Weapons|Ver Armas Gran
+Экипируйте\nгран-оружие.|Equip a\nGran Weapon.|Equipe uma\nArma Gran.
+Путешествие гран-рыцаря|Gran Knight's journey|Jornada do Cavaleiro Gran
+Великая Душа|Grand Soul|Grande Alma
+Гран-умение|Gran Skill|Habilidade Gran
+Гран-оружие и артефакт|Gran Weapon and artifact|Arma Gran e artefato
+Подробно о гран-оружии|Gran Weapon details|Detalhes da Arma Gran
+Усиление гран-оружия|Enhance Gran Weapon|Aprimorar Arma Gran
+Дружба гран-оружия|Gran Weapon friendship|Amizade da Arma Gran
+О гран-оружии|About Gran Weapons|Sobre Armas Gran
+Задания гран-оружия|Gran Weapon quests|Missões de Armas Gran
+Выберите гран-оружие.|Select a Gran Weapon.|Selecione uma Arma Gran.
+Доступно после прорыва|Available after limit break|Disponível após quebra de limite
+Доступно после развития|Available after awakening|Disponível após evolução
+Развитие:|Awakening:|Evolução:
+Доступно развитие|Awakening available|Evolução disponível
+Развитие завершено|Awakening complete|Evolução concluída
+Материал для развития|Awakening material|Material de evolução
+О развитии|About awakening|Sobre evolução
+Доп. свойства развития|Additional awakening stats|Atributos extras de evolução
+Ближняя дистанция|Melee range|Curta distância
+Вкладка функций|Features tab|Aba de funções
+Основной голос|Main voice|Voz principal
+Зал по умолчанию|Default hall|Salão padrão
+Взнос внесен|Contribution submitted|Contribuição enviada
+Награда ордена|Order reward|Recompensa da ordem
+Создать орден|Create order|Criar ordem
+Выбор ордена|Select order|Selecionar ordem
+Умения ордена|Order skills|Habilidades da ordem
+Шаблон умений ордена|Order skill preset|Predefinição de habilidades da ordem
+Название ордена|Order name|Nome da ordem
+Смена названия ордена|Rename order|Renomear ordem
+Повышение мощи ордена|Increase order power|Aumentar poder da ordem
+Снижение мощи ордена|Decrease order power|Diminuir poder da ordem
+Об ордене|About order|Sobre a ordem
+Мощь|Power|Poder
+Название гильдии ордена|Order guild name|Nome da guilda da ordem
+Ранг ордена|Order rank|Grau da ordem
+По вкладу|By contribution|Por contribuição
+Прочее|Other|Outros
+Другое|Other|Outro
+Статус заявок на вступление|Join request status|Status dos pedidos de entrada
+Рейтинг состязаний гильдий|Guild contest rankings|Classificação de disputas de guildas
+Личный рейтинг в гильдии|Personal guild ranking|Classificação pessoal na guilda
+Журнал гильдии|Guild log|Registro da guilda
+Сменить эмблему|Change emblem|Alterar emblema
+Штаб|Headquarters|Quartel-general
+Активация умения гильдии|Activate guild skill|Ativar habilidade da guilda
+Смена названия гильдии|Rename guild|Renomear guilda
+Всего очков гильдии|Total guild points|Total de pontos da guilda
+Вход в гильдию|Guild check-in|Presença na guilda
+Награды за вход в гильдию|Guild check-in rewards|Recompensas de presença na guilda

@@ -1,0 +1,20 @@
+{
+  "pt": {
+    "sha256": "8787f081a6dbaeed2a56ea004c90b62d5bf92f146479ce6681b72f3ddc4a9179",
+    "bytes": 106769459,
+    "preserved_other_entries": 410,
+    "story_unchanged": true,
+    "namespace_ids_keys_source_hashes_refs_preserved": true,
+    "resource": "Localization/Game/ru-RU/Game.locres",
+    "runtime_test": "pending"
+  },
+  "en": {
+    "sha256": "d7d1dd13ecf38810437eeb41a2a16896e3f41441650d1ef83ed718c35ef404f5",
+    "bytes": 106895362,
+    "preserved_other_entries": 410,
+    "story_unchanged": true,
+    "namespace_ids_keys_source_hashes_refs_preserved": true,
+    "resource": "Localization/Game/ru-RU/Game.locres",
+    "runtime_test": "pending"
+  }
+}

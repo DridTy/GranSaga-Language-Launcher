@@ -9,6 +9,12 @@ Unknown game build rejected without mutation
 Concurrent installer lock enforced
 Corrupt backup rejected without mutation
 Corrupt patch rejected before replacing game data
-Recover clean original from v0.4, switch to EN and restore RU
+Recover clean original from existing PT mod, switch to EN and restore RU
 Upgrade directly from previous English without restoring RU first
-PASS: 13 integration checks. Fake installation only; no live game altered.
+Corrupt signature rejected without changing game data
+Missing signature rejected with repair guidance
+Fresh game without downloaded localization is rejected with first-run guidance
+Wrong game folder rejected
+Installation and restoration succeed without INI or loose localization files
+Existing configuration preserved during restoration
+PASS: 19 integration checks. Fake installation only; no live game altered.

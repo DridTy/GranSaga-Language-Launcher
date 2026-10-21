@@ -10,9 +10,10 @@ namespace GranSagaLanguages {
   public static void Run(Engine e,string fixture) {
    fixture=Path.GetFullPath(fixture);string original=Path.Combine(fixture,"original.pak");
    Assert(Engine.Hash(original)==e.Data.originalSha256,"original fixture hash");
-   string game=Path.Combine(fixture,"fake-game");string target=Path.Combine(game,Engine.RelativePak);
+   string game=Path.Combine(fixture,"fake-game-"+Guid.NewGuid().ToString("N"));string target=Path.Combine(game,Engine.RelativePak);
    Directory.CreateDirectory(Path.GetDirectoryName(target));File.Copy(original,target,true);
-   string sig=Path.ChangeExtension(target,".sig");File.WriteAllText(sig,"TEST SIGNATURE",Encoding.ASCII);string sigHash=Engine.Hash(sig);
+   File.WriteAllText(Path.Combine(game,"GranSaga.exe"),"INERT TEST FIXTURE - NOT AN EXECUTABLE");
+   string sig=Path.ChangeExtension(target,".sig");File.Copy(Path.Combine(fixture,"original.sig"),sig,true);string sigHash=Engine.Hash(sig);
    var passed=new List<string>();
    foreach(var lang in e.Data.languages) {
     string rebuilt=Path.Combine(fixture,"reconstruct-"+lang.id+".pak");if(File.Exists(rebuilt))File.Delete(rebuilt);
@@ -42,13 +43,14 @@ namespace GranSagaLanguages {
    File.WriteAllText(Path.Combine(corruptRoot,"patches",e.Data.languages[0].file),"BROKEN PATCH");
    var corrupt=new Engine(corruptRoot);MustFail(()=>corrupt.Apply(game,e.Data.languages[0],true));Assert(Engine.Hash(target)==oldHash,"corrupt patch target unchanged");
    passed.Add("Corrupt patch rejected before replacing game data");
-   // First installation over an already modified v0.4: reconstruct a clean backup.
-   File.Copy(Path.Combine(fixture,"reconstruct-pt-BR.pak"),target,true);File.Delete(backup);
+   // First installation over a known pre-existing translation: reconstruct a clean backup.
+   string previousPt=Path.Combine(fixture,"previous-PT.pak");
+   File.Copy(File.Exists(previousPt)?previousPt:Path.Combine(fixture,"reconstruct-pt-BR.pak"),target,true);File.Delete(backup);
    e.Apply(game,e.Data.languages.Single(x=>x.id=="en-US"),true);
    Assert(Engine.Hash(backup)==e.Data.originalSha256,"recover original from existing mod");
    e.Apply(game,e.Data.languages.Single(x=>x.id=="ru-RU"),true);
    Assert(Engine.Hash(target)==e.Data.originalSha256,"restore after switch");
-   Assert(Engine.Hash(sig)==sigHash,"final signature hash");passed.Add("Recover clean original from v0.4, switch to EN and restore RU");
+   Assert(Engine.Hash(sig)==sigHash,"final signature hash");passed.Add("Recover clean original from existing PT mod, switch to EN and restore RU");
    string previousEnglish=Path.Combine(fixture,"previous-English.pak");
    if(File.Exists(previousEnglish)) {
     File.Copy(previousEnglish,target,true);
@@ -58,6 +60,16 @@ namespace GranSagaLanguages {
     Assert(Engine.Hash(sig)==sigHash,"upgrade preserves signature");
     passed.Add("Upgrade directly from previous English without restoring RU first");
    }
+   string current=Engine.Hash(target);
+   File.WriteAllText(sig,"BAD SIGNATURE");MustFail(()=>e.Apply(game,e.Data.languages[0],true));Assert(Engine.Hash(target)==current,"bad signature leaves data unchanged");
+   File.Copy(Path.Combine(fixture,"original.sig"),sig,true);passed.Add("Corrupt signature rejected without changing game data");
+   File.Delete(sig);MustFail(()=>e.Inspect(game));File.Copy(Path.Combine(fixture,"original.sig"),sig,true);passed.Add("Missing signature rejected with repair guidance");
+   string incomplete=Path.Combine(fixture,"incomplete-game");Directory.CreateDirectory(Path.Combine(incomplete,"ProjectR"));File.WriteAllText(Path.Combine(incomplete,"GranSaga.exe"),"TEST FIXTURE");
+   MustFail(()=>e.Inspect(incomplete));Assert(!File.Exists(Path.Combine(incomplete,Engine.RelativePak)),"missing game data remains missing");passed.Add("Fresh game without downloaded localization is rejected with first-run guidance");
+   MustFail(()=>e.Inspect(Path.Combine(fixture,"not-a-game")));passed.Add("Wrong game folder rejected");
+   Assert(!File.Exists(Path.Combine(game,"Game.ini")) && !Directory.Exists(Path.Combine(game,"Saved")),"no manual configuration required by installer");passed.Add("Installation and restoration succeed without INI or loose localization files");
+   string config=Path.Combine(game,"Saved","Config","WindowsNoEditor","Engine.ini");Directory.CreateDirectory(Path.GetDirectoryName(config));File.WriteAllText(config,"[Internationalization]\r\nCulture=ru-RU\r\n");string configHash=Engine.Hash(config);
+   e.Apply(game,e.Data.languages.Single(x=>x.id=="ru-RU"),true);Assert(Engine.Hash(config)==configHash,"existing configuration preserved");passed.Add("Existing configuration preserved during restoration");
    File.WriteAllLines(Path.Combine(e.Root,"TEST-RESULTS.txt"),passed.Concat(new[]{"PASS: "+passed.Count+" integration checks. Fake installation only; no live game altered."}),Encoding.UTF8);
   }
  }

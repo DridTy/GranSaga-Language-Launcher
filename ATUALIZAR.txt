@@ -1,12 +1,15 @@
-ATUALIZAR DO INSTALADOR ANTERIOR
+ATUALIZAR PARA v0.3
 
-1. Feche o jogo e o instalador antigo.
-2. Extraia este ZIP inteiro em uma nova pasta.
-3. Execute GranSagaLanguages.exe dessa nova pasta.
-4. Selecione a pasta do jogo e English progression v0.2.
-5. Clique em Aplicar / Apply e abra o jogo pelo 4game.
+Feche o jogo e o instalador anterior. Extraia este ZIP inteiro em uma nova pasta.
+Abra GranSagaLanguages.exe, selecione a instalação real e o idioma e clique em Aplicar.
+Pode instalar diretamente sobre o inglês inicial/v0.2 ou PT-BR anterior compatível.
+Não é necessário restaurar o russo antes. O backup original existente será verificado.
 
-Não é necessário restaurar russo antes: o instalador reconhece a versão
-inglesa anterior e o PT-BR v0.4. Ele usa o backup original já existente.
-Mantenha o executável, manifest.json e patches/ da mesma distribuição.
-Ainda haverá russo nos trechos não traduzidos, tutoriais e outras tabelas.
+Não misture manifest.json ou patches de versões diferentes. Esta versão amplia os
+menus; a história anterior é preservada. A tradução automática nova é um rascunho
+para revisão, principalmente no inglês. Confira KNOWN-LIMITATIONS.md.
+
+Para quem ainda não tem o jogo: instale e atualize o Gran Saga RU pelo 4game,
+abra uma vez até a tela inicial, feche e só então use este instalador do mod.
+Não precisa mudar o idioma dentro do jogo, instalar Python ou copiar traduções soltas.
+Precisa de .NET Framework 4.8 ou superior. Use Iniciar-Launcher.cmd para verificar.

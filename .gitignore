@@ -1,0 +1,9 @@
+# Build output and local game files
+GranSagaLanguages.exe
+*.pak
+*.sig
+*.tmp
+*.log
+__pycache__/
+test/
+# Keep manifest.json and patches/*.gsp.gz for the release bundle.

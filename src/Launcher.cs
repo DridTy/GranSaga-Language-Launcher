@@ -18,7 +18,7 @@ namespace GranSagaLanguages {
   public override string ToString() { return label; }
  }
  public class Manifest {
-  public string version, originalSha256, prefixSha256;
+  public string version, originalSha256, prefixSha256, originalSignatureSha256;
   public string[] supportedHashes;
   public Patch[] languages;
  }
@@ -28,7 +28,9 @@ namespace GranSagaLanguages {
   public const string RelativePak = @"ProjectR\PersistentDownloadDir\ndb\ProjectR-WindowsNoEditor.pak";
   public Engine(string root) {
    Root=Path.GetFullPath(root);
-   Data=new JavaScriptSerializer().Deserialize<Manifest>(File.ReadAllText(Path.Combine(Root,"manifest.json"),Encoding.UTF8));
+   string manifest=Path.Combine(Root,"manifest.json");
+   if(!File.Exists(manifest))throw new FileNotFoundException("Extraia o ZIP inteiro antes de abrir o instalador. Faltou manifest.json. / Extract the entire ZIP first. manifest.json is missing.");
+   Data=new JavaScriptSerializer().Deserialize<Manifest>(File.ReadAllText(manifest,Encoding.UTF8));
    if(Data==null || Data.languages==null || Data.languages.Length!=3 || Data.supportedHashes==null) throw new InvalidDataException("Manifesto inválido / Invalid manifest.");
    foreach(var p in Data.languages) {
     if(p.file!=Path.GetFileName(p.file) || p.targetLength<1 || p.targetLength>268435456 || p.prefixLength<0 || p.prefixLength>p.targetLength) throw new InvalidDataException("Pacote inválido / Invalid package.");
@@ -48,14 +50,19 @@ namespace GranSagaLanguages {
    return false;
   }
   public string Inspect(string folder) {
-   string target=Path.Combine(Path.GetFullPath(folder),RelativePak);
-   if(!File.Exists(target))throw new FileNotFoundException("Selecione a pasta GranSaga que contém ProjectR. / Select the GranSaga folder containing ProjectR.");
+   folder=Path.GetFullPath(folder);string target=Path.Combine(folder,RelativePak);
+   if(!File.Exists(Path.Combine(folder,"GranSaga.exe")))throw new FileNotFoundException("Selecione a instalação do Gran Saga usada pelo 4game, contendo GranSaga.exe e ProjectR. Este instalador aplica o mod; ele não baixa o jogo. / Select the installed Gran Saga folder containing GranSaga.exe and ProjectR. This tool installs the mod, not the game.");
+   if(!File.Exists(target))throw new FileNotFoundException("Os dados de localização ainda não foram baixados. Atualize o Gran Saga RU no 4game e abra-o uma vez até a tela inicial; feche o jogo e tente novamente. / Localization data is missing. Update Gran Saga RU in 4game and start it once up to the title screen, then close it and retry.");
    string hash=Hash(target);
    if(!Data.supportedHashes.Contains(hash)) throw new InvalidDataException("Versão desconhecida. Nenhum arquivo foi alterado. Use uma versão compatível ou aguarde uma atualização do mod. / Unsupported game version. No files changed.");
+   string sig=Path.ChangeExtension(target,".sig");
+   if(!File.Exists(sig))throw new FileNotFoundException("Assinatura original ausente. Verifique os arquivos pelo 4game. / Original signature missing. Verify game files through 4game.");
+   if(!string.IsNullOrEmpty(Data.originalSignatureSha256) && Hash(sig)!=Data.originalSignatureSha256)throw new InvalidDataException("Assinatura incompatível ou corrompida. Verifique os arquivos no 4game; não substitua o .sig pelo mod. / Incompatible or corrupt signature. Verify files in 4game; do not replace .sig with the mod.");
    return hash;
   }
   public void Reconstruct(string source,Patch patch,string destination) {
    string patchPath=Path.Combine(Root,"patches",patch.file);
+   if(!File.Exists(patchPath))throw new FileNotFoundException("Faltam os patches. Extraia o ZIP inteiro e mantenha patches/ ao lado do aplicativo. / Patches missing. Extract the entire ZIP and keep patches/ beside the app.");
    if(Hash(patchPath)!=patch.sha256)throw new InvalidDataException("Patch corrompido / Corrupt patch.");
    if(PrefixHash(source,patch.prefixLength)!=Data.prefixSha256)throw new InvalidDataException("Base incompatível / Incompatible base.");
    using(var dst=new FileStream(destination,FileMode.CreateNew,FileAccess.Write,FileShare.None)) {
@@ -90,6 +97,9 @@ namespace GranSagaLanguages {
     string temp=Path.Combine(Path.GetDirectoryName(target),".gransaga-"+Guid.NewGuid().ToString("N")+".tmp");
     string backupTemp=Path.Combine(store,Guid.NewGuid().ToString("N")+".tmp");
     try {
+     long required=selected.targetLength+(File.Exists(original)?0:russian.targetLength)+8388608;
+     var drive=new DriveInfo(Path.GetPathRoot(target));
+     if(drive.IsReady && drive.AvailableFreeSpace<required)throw new IOException("Espaço insuficiente para preparar o pacote e o backup. / Not enough disk space for the package and backup.");
      if(File.Exists(original)) {
       if(Hash(original)!=Data.originalSha256)throw new InvalidDataException("Backup original inválido; ele não será sobrescrito. / Original backup is invalid and will not be overwritten.");
      } else {
@@ -118,12 +128,12 @@ namespace GranSagaLanguages {
   Button install,restore,browse,check,open;
   Color bg=Color.FromArgb(19,25,39), card=Color.FromArgb(30,40,60), gold=Color.FromArgb(230,194,117);
   public Launcher(Engine e) {
-   engine=e; Text="Gran Saga · Language Launcher";ClientSize=new Size(850,630);MinimumSize=new Size(866,669);
+   engine=e; Text="Gran Saga · Language Launcher v0.3";ClientSize=new Size(850,650);MinimumSize=new Size(866,689);
    BackColor=bg;ForeColor=Color.White;Font=new Font("Segoe UI",10);StartPosition=FormStartPosition.CenterScreen;AutoScaleMode=AutoScaleMode.Dpi;
    var main=new TableLayoutPanel{Dock=DockStyle.Fill,Padding=new Padding(30),ColumnCount=1,RowCount=9};Controls.Add(main);
    int[] heights={46,40,26,45,26,48,100,65,55};foreach(int h in heights)main.RowStyles.Add(new RowStyle(SizeType.Absolute,h));
    main.Controls.Add(new Label{Text="GRAN SAGA  /  LANGUAGES",ForeColor=gold,Font=new Font("Segoe UI Semibold",22),AutoSize=true},0,0);
-   main.Controls.Add(new Label{Text="Instale uma tradução · Install a translation",AutoSize=true,ForeColor=Color.LightSteelBlue},0,1);
+   main.Controls.Add(new Label{Text="Mod de idioma · Requer Gran Saga RU instalado pelo 4game",AutoSize=true,ForeColor=Color.LightSteelBlue},0,1);
    main.Controls.Add(new Label{Text="Pasta do jogo / Game folder",AutoSize=true},0,2);
    var pathRow=new TableLayoutPanel{Dock=DockStyle.Fill,ColumnCount=2};pathRow.ColumnStyles.Add(new ColumnStyle(SizeType.Percent,100));pathRow.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute,145));
    folder=new TextBox{Dock=DockStyle.Fill,Text=@"C:\Games\GranSaga",BackColor=card,ForeColor=Color.White,BorderStyle=BorderStyle.FixedSingle};
@@ -134,7 +144,7 @@ namespace GranSagaLanguages {
    details=new Label{Dock=DockStyle.Fill,Padding=new Padding(12),BackColor=card,ForeColor=Color.LightSteelBlue};main.Controls.Add(details,0,6);
    foreach(var p in e.Data.languages) {
     Patch choice=p;
-    string label=p.id=="pt-BR"?"Português BR · v0.4":p.id=="en-US"?"English · progression v0.2":"Русский · original";
+    string label=p.id=="pt-BR"?"Português BR · menus ampliados":p.id=="en-US"?"English · expanded menus":"Русский · original";
     var radio=new RadioButton{Text=label,Width=245,Height=28,ForeColor=Color.White,BackColor=card,Tag=choice};
     radio.CheckedChanged+=(s,a)=>{if(radio.Checked){selectedLanguage=choice;details.Text=choice.description;}};
     languages.Controls.Add(radio);if(selectedLanguage==null)radio.Checked=true;
@@ -144,7 +154,9 @@ namespace GranSagaLanguages {
    restore=Button("Restaurar russo / Restore RU");restore.Width=220;restore.Click+=async(s,a)=>await Action(true);
    check=Button("Verificar / Check");check.Click+=async(s,a)=>await Inspect();
    open=Button("Abrir 4game...");open.Click+=(s,a)=>Open4game();
-   actionRow.Controls.AddRange(new Control[]{install,restore,check,open});main.Controls.Add(actionRow,0,7);
+   var help=Button("Ajuda/Help");help.Width=90;
+   help.Click+=(s,a)=>MessageBox.Show(this,"1. Instale e atualize o Gran Saga RU pelo 4game.\n2. Abra o jogo uma vez para baixar os dados, depois feche.\n3. Extraia o ZIP inteiro, escolha a pasta do jogo e aplique o mod.\n4. Abra sempre pelo 4game. Não é necessário trocar o idioma dentro do jogo.\n\nRequires .NET Framework 4.8+. No Python or translation models required. This installs the language mod, not the game.","Primeira instalação / First installation",MessageBoxButtons.OK,MessageBoxIcon.Information);
+   actionRow.Controls.AddRange(new Control[]{install,restore,check,open,help});main.Controls.Add(actionRow,0,7);
    var bottom=new TableLayoutPanel{Dock=DockStyle.Fill,ColumnCount=1,RowCount=2};bottom.RowStyles.Add(new RowStyle(SizeType.Absolute,38));bottom.RowStyles.Add(new RowStyle(SizeType.Absolute,8));
    status=new Label{Dock=DockStyle.Fill,Text="Feche o jogo antes de aplicar. / Close the game before applying.",ForeColor=Color.LightSteelBlue,AutoEllipsis=true};
    progress=new ProgressBar{Dock=DockStyle.Fill,Style=ProgressBarStyle.Marquee,Visible=false};bottom.Controls.Add(status,0,0);bottom.Controls.Add(progress,0,1);main.Controls.Add(bottom,0,8);
@@ -162,7 +174,7 @@ namespace GranSagaLanguages {
   }
   async Task Inspect() {
    string path=folder.Text;Busy(true);status.Text="Verificando... / Checking...";
-   try {string hash=await Task.Run(()=>engine.Inspect(path));Patch p=engine.Data.languages.FirstOrDefault(x=>x.targetSha256==hash);status.Text="Compatível / Compatible: "+(p==null?"PT-BR anterior / previous PT-BR":p.label);}
+   try {string hash=await Task.Run(()=>engine.Inspect(path));Patch p=engine.Data.languages.FirstOrDefault(x=>x.targetSha256==hash);status.Text="Compatível / Compatible: "+(p==null?"Mod anterior / previous mod":p.label);}
    catch(Exception ex){Error(ex.Message);}finally{Busy(false);}
   }
   void Error(string message){status.Text="Operação interrompida / Operation stopped";MessageBox.Show(this,message,"Gran Saga Languages",MessageBoxButtons.OK,MessageBoxIcon.Warning);}
@@ -177,6 +189,9 @@ namespace GranSagaLanguages {
  static class Program {
   [STAThread] static int Main(string[] args) {
    try {
+    using(var key=Microsoft.Win32.Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full")) {
+     if(key==null || Convert.ToInt32(key.GetValue("Release",0))<528040)throw new NotSupportedException("Instale o .NET Framework 4.8 ou superior pelo site oficial da Microsoft. / Install .NET Framework 4.8 or later from Microsoft.");
+    }
     string root=AppDomain.CurrentDomain.BaseDirectory;var engine=new Engine(root);
     if(args.Length>0 && args[0]=="--self-test") { Tests.Run(engine,args[1]);return 0; }
     Application.EnableVisualStyles();Application.SetCompatibleTextRenderingDefault(false);

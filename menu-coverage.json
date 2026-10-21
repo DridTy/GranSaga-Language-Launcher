@@ -1,0 +1,22 @@
+{
+  "en": {
+    "translated_pool_records": 3615,
+    "russian_pool_records_translated": 3611,
+    "translated_entry_references": 8309,
+    "total_pool_records": 3814,
+    "total_entry_references": 8728,
+    "reviewed_or_preexisting_pool_records": 579,
+    "machine_draft_pool_records": 3036,
+    "remaining_cyrillic_pool_records": 0
+  },
+  "pt": {
+    "translated_pool_records": 3635,
+    "russian_pool_records_translated": 3611,
+    "translated_entry_references": 8338,
+    "total_pool_records": 3814,
+    "total_entry_references": 8728,
+    "reviewed_or_preexisting_pool_records": 2656,
+    "machine_draft_pool_records": 979,
+    "remaining_cyrillic_pool_records": 0
+  }
+}
