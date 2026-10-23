@@ -8,66 +8,56 @@
 
 **TRADUÇÃO COMUNITÁRIA · PT-BR / ENGLISH · WINDOWS X64**
 
-`v0.3 PREVIEW` · `CLIENTE RUSSO / 4GAME` · `TRADUÇÃO PARCIAL`
+`v0.4.2 PRÉVIA DE HISTÓRIA` · `GRAN SAGA RU / 4GAME` · `TRADUÇÃO PARCIAL`
 
-[**BAIXAR v0.3**](https://github.com/DridTy/GranSaga-Language-Launcher/releases/tag/v0.3.0-preview) · [INSTALAÇÃO](FIRST-RUN-CHECKLIST.md) · [LIMITAÇÕES](KNOWN-LIMITATIONS.md)
+[**BAIXAR v0.4.2 — ZIP COMPLETO**](https://github.com/DridTy/GranSaga-Language-Launcher/releases/download/v0.4.2-story-preview/GranSagaLocalizer-v0.4.2-story-preview.zip) · [NOTAS DA VERSÃO](https://github.com/DridTy/GranSaga-Language-Launcher/releases/tag/v0.4.2-story-preview) · [GAMEBANANA](https://gamebanana.com/tools/24612)
 
----
+Instalador comunitário de mod de idioma para **Gran Saga RU**, com traduções em português brasileiro e inglês. Requer o cliente russo oficial instalado e atualizado pelo **4game**.
 
-Instalador comunitário de **mod de idioma** para o cliente russo do Gran Saga no Windows x64.
-Ele não baixa nem instala o jogo. Primeiro instale e atualize o Gran Saga RU pelo
-**4game**, abra uma vez para baixar os dados iniciais e feche antes de aplicar.
+## Atualização da história
 
-![Instalador](preview.png)
+A v0.4.2 amplia legendas de cenas, missões secundárias, conversas de personagens e outros diálogos da história, mantendo os menus ampliados.
 
-## Menus ampliados
+| Registros de diálogo | Português brasileiro | Inglês |
+|---|---:|---:|
+| Adicionados desde a v0.4.1 | 55.124 | 56.600 |
+| Traduzidos no banco de diálogos da história | 71.250 | 71.326 |
 
-Os **3.611 registros com russo do recurso principal Game.locres** foram traduzidos
-nos dois idiomas. Isso não significa todos os menus do jogo: outras tabelas internas
-ainda podem apresentar russo.
+As contagens incluem falas repetidas e se referem ao banco de diálogos inspecionado, não a todos os textos do jogo. Inclui **157 registros de diálogo revisados manualmente nos dois idiomas**, além de correções em duas falas do tutorial de Liberação e na instrução de ataques automáticos.
 
-| Idioma | Registros de interface alterados | Referências de interface | Rascunhos automáticos sem revisão completa |
-|---|---:|---:|---:|
-| Português brasileiro | 3.635 | 8.338 | 979 |
-| English | 3.615 | 8.309 | 3.036 |
+A maioria das traduções é **automática e ainda precisa de revisão**. Podem aparecer textos em russo, frases estranhas, nomes inconsistentes ou rótulos cortados. O jogo não está totalmente traduzido nem revisado. Jogadores testaram trechos de diálogos e combate nos dois idiomas; a campanha inteira ainda não foi conferida em jogo.
 
-As traduções anteriores foram preservadas. Os textos novos usaram uma base automática
-local, com revisão dos termos principais de menu. A ampliação precisa de revisão visual
-no jogo. A história PT-BR v0.4 e a inglesa v0.2 foram mantidas e continuam parciais.
+## Instalar ou atualizar
 
-## Instalação
+1. Instale/atualize o **Gran Saga RU pelo 4game**. Abra o jogo oficial uma vez e aguarde o download dos dados iniciais.
+2. Feche o jogo.
+3. Baixe o **ZIP completo da v0.4.2** acima e extraia tudo em uma **pasta nova**.
+4. Execute `GranSagaLanguages.exe`, selecione a pasta real do jogo e clique em **Verificar / Check**.
+5. Escolha **Português BR** ou **English**, clique em **Aplicar / Apply** e aguarde a confirmação.
+6. Abra o jogo pelo **4game**.
 
-1. Instale/atualize o **Gran Saga RU pelo 4game** e abra uma vez até a tela inicial.
-2. Feche o jogo e extraia **todo** o ZIP do mod.
-3. Execute `GranSagaLanguages.exe`, selecione a instalação real e clique em **Verificar**.
-4. Escolha o idioma, clique em **Aplicar** e aguarde a confirmação.
-5. Abra pelo **4game**. Não é preciso trocar idioma no jogo nem editar INIs manualmente.
+Use o ZIP completo: mantenha o executável, a configuração, o manifesto e a pasta `patches/` juntos. O ZIP **Source code** gerado automaticamente pelo GitHub não é o instalador.
 
-Requer Windows x64 e **.NET Framework 4.8 ou superior**. Não exige Python, modelos
-de tradução, compilador nem ferramentas de PAK. O arquivo `Iniciar-Launcher.cmd`
-verifica o .NET se necessário. Mantenha EXE, config, manifesto e patches juntos.
+Requer **Windows x64 e .NET Framework 4.8 ou superior**. Não exige Python nem ferramentas de tradução. O launcher não baixa nem instala o jogo e não solicita seus dados de login.
 
-Use **Restaurar russo** para voltar ao original. É possível atualizar diretamente
-sobre os mods anteriores compatíveis. Versões desconhecidas, dados ausentes e
-assinaturas inválidas são recusados com orientações. Os backups ficam ao lado do PAK.
+Use **Restaurar russo / Restore RU** para voltar aos arquivos de idioma originais. Versões anteriores compatíveis podem ser atualizadas diretamente; o launcher verifica a compatibilidade antes de aplicar.
 
-## Detalhes
+## Verificador de atualizações do GitHub
 
-- [Checklist de primeira instalação](FIRST-RUN-CHECKLIST.md)
-- [Cobertura e limitações](KNOWN-LIMITATIONS.md)
-- [Resultados dos testes](TEST-RESULTS.txt)
-- [Validação dos pacotes](PACKAGE-VALIDATION.json)
-- [Fila de revisão das traduções](translations/review-queue.json)
+Clique em **Atualizações / Updates** para consultar as versões publicadas no GitHub. **GitHub / Baixar** abre a página da versão para você baixar o novo ZIP.
 
-O instalador preserva a assinatura original, executáveis, vozes e região do jogo.
-Não solicita dados de login. Os testes usam uma instalação fictícia; a abertura
-com um perfil de jogo totalmente novo ainda precisa de revisão dentro do jogo.
+O download e a instalação continuam manuais. Versões de prévia consideram prévias publicadas; versões estáveis usam o canal estável. Uma falha de conexão não impede a instalação local.
 
-## Desenvolvimento
+## Validação e relatos de problemas
 
-Execute `Build.ps1` no Windows para compilar. Fontes C# em `src/`, memórias de tradução
-em `translations/` e patches compactados em `patches/`. Modelos e bibliotecas usados
-na preparação não estão incluídos na distribuição.
+- **19 testes de integração do instalador aprovados**, em instalação simulada.
+- **10 testes do verificador de atualizações aprovados**, incluindo uma consulta real ao GitHub.
+- Estrutura dos diálogos, códigos de formatação, recursos preservados e hashes do pacote conferidos.
 
+O ZIP inclui instruções, resultados dos testes e `COBERTURA-HISTORIA.csv`, com a cobertura por grupo de diálogos. As verificações dos arquivos não garantem tradução perfeita nem compatibilidade integral em jogo.
 
-Projeto de fãs, sem vínculo oficial com Gran Saga ou 4game.
+[Relate um problema](https://github.com/DridTy/GranSaga-Language-Launcher/issues): informe o idioma escolhido, a versão do launcher e uma captura ou a frase exata. Não envie senhas nem credenciais da conta.
+
+[Todas as versões](https://github.com/DridTy/GranSaga-Language-Launcher/releases) · [GameBanana](https://gamebanana.com/tools/24612)
+
+Gran Saga e seus recursos originais pertencem aos respectivos titulares, incluindo NPIXEL. Projeto comunitário não oficial de **DridTy**, sem vínculo com Gran Saga, NPIXEL ou 4game.
